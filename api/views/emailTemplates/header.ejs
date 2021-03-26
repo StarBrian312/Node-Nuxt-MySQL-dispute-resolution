@@ -1,0 +1,72 @@
+<head>
+    <style>
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            border: 1px #cccccc solid;
+            border-radius: 3px;
+        }
+        .header {
+            display: flex;
+            padding: 20px;
+            min-height: 50px;
+            background-color: #24346c;
+        }
+        .content {
+            padding: 0 5px 0 5px;
+        }
+        .col-image {
+            align-self: center;
+            width: 40%;
+            height: 100%;
+        }
+        .col-text {
+            align-self: center;
+            height: 100%;
+            margin: 3% 0% 0% 7%;
+        }
+        .text-light {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #ffffff;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .text-center {
+            text-align: center;
+        }
+        @media only screen and (max-width: 768px) {
+            .container {
+                width: 768px;
+                margin: 0 auto;
+            }
+            .text-light {
+                font-size: large;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .container {
+                width: 480px;
+                margin: 0 auto;
+            }
+            .text-light {
+                font-size: smaller;
+            }
+        }
+        .text-body {
+            margin: 15px;
+            min-height: 400px;
+        }
+    </style>
+</head>
+<div class="container">
+    <div class="header">
+        <img 
+            class="col-image header-image"
+            src="cid:logo"
+            alt="<%=siteName%> logo"
+            aria-describedby="<%=siteName%> logo">
+        <div class="col-text" style="align-self: center;">
+            <p class="text-light text-center"><%=siteName%></p>
+        </div>
+    </div>
+    <div class="content">

@@ -1,0 +1,15 @@
+<%- include('../header'); -%>
+<p class="text-body">
+  <%= __('Welcome to Guided Compliance')%>
+  <br><br>
+  <%= __('Please click ')%>
+  <a 
+  href="<%=clientURL%>/finish-registration?email=<%=email%>&token=<%=token%>">
+  <%= __('here')%>
+  </a>  <%= __('to set up your password.')%>
+  <br><br>
+  <%= __('Or copy the following link and paste in your web browser.')%>
+  <br>
+  <%=clientURL%>/finish-registration?email=<%=email%>&token=<%=token%>
+</p>
+<%- include('../footer'); -%>

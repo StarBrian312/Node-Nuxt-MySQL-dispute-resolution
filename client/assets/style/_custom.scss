@@ -1,0 +1,10 @@
+.hover-primary:hover{
+    color: $primary;
+    cursor: pointer;
+}
+.custom-textarea textarea{
+    overflow-y: auto !important;
+}
+.btn:focus{
+    box-shadow: unset !important
+}
